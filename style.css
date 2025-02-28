@@ -1,16 +1,16 @@
 .custom-control-button {
-  width: 13px;
-  height: 13px;
+  width: 13px !important;
+  height: 13px !important;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   font-weight: 700;
-  font-size: 8px; /* Adjust font size for better fit */
+  font-size: 8px !important; /* Adjust font size for better fit */
   box-sizing: border-box;
-  margin: 2px; /* Adjust margin for spacing */
-  padding: 0; /* Ensure no additional padding */
+  margin: 2px !important; /* Adjust margin for spacing */
+  padding: 0 !important; /* Ensure no additional padding */
 }
 .custom-control-button:hover {
   background-color: #33373e !important;
