@@ -7,13 +7,13 @@
     minimizeColor: "#ffbd2e", // yellow
     maximizeColor: "#27c93f", // green
     // button size
-    size: "14px",
+    size: "15px",
     // border radius
     radius: "50%",
     // button hover background color
     hoverBackgroundColor: "#33373e",
     // button text color
-    color: "#c0c0c0",
+    color: "#333333",
     fontSize: 10,
     fontWeight: "700",
     gap: "8px"
