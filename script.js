@@ -4,7 +4,7 @@
     closeColor: "#ff5f56",
     minimizeColor: "#ffbd2e",
     maximizeColor: "#27c93f",
-    size: "13px",
+    size: "12px",
     radius: "50%",
     hoverBackgroundColor: "#33373e",
     color: "#c0c0c0",
