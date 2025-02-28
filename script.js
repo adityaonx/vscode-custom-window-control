@@ -16,7 +16,7 @@
     color: "#c0c0c0",
     fontSize: 10,
     fontWeight: "700",
-    gap: "10px" // Increased gap
+    gap: "10px" // Moderate increase
   });
 
   window.addEventListener("DOMContentLoaded", () => {
@@ -54,5 +54,11 @@
       leftTitlebar.appendChild(controls);
       clearInterval(timer);
     }, 100);
+    
+    // Hide favicon
+    const link = document.querySelector('link[rel="icon"]');
+    if (link) {
+      link.style.display = 'none';
+    }
   });
 })();
