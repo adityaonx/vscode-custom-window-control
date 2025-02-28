@@ -7,7 +7,7 @@
     minimizeColor: "#ffbd2e", // yellow
     maximizeColor: "#27c93f", // green
     // button size
-    size: "10px",
+    size: "11px",
     // border radius
     radius: "50%",
     // button hover background color
