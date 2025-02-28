@@ -14,8 +14,8 @@
     hoverBackgroundColor: "#33373e",
     // button text color
     color: "#ffffff",
-    fontSize: 0,
-    fontWeight: "0",
+    fontSize: 5,
+    fontWeight: "400",
     gap: "8px"
   });
 
