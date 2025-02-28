@@ -5,11 +5,6 @@
     minimizeColor: "#ffbd2e",
     maximizeColor: "#27c93f",
     size: "13px", // Desired size
-    radius: "50%",
-    hoverBackgroundColor: "#33373e",
-    color: "#c0c0c0",
-    fontSize: 10,
-    fontWeight: "700",
     gap: "10px"
   });
 
@@ -30,18 +25,7 @@
       controls.style.width = "auto";
       controls.style.gap = controls.style.marginLeft = style.gap;
       controls.childNodes.forEach((child, index) => {
-        child.style.borderRadius = style.radius;
-        child.style.width = child.style.height = style.size;
-        child.style.minWidth = style.size;
-        child.style.minHeight = style.size;
-        child.style.margin = "auto";
-        child.style.cursor = "pointer";
-        child.style.fontWeight = style.fontWeight;
-        child.style.fontSize = `${style.fontSize}px`;
-        child.style.lineHeight = style.size; // Adjust line-height for better size consistency
-        child.style.display = "flex";
-        child.style.alignItems = "center";
-        child.style.justifyContent = "center";
+        child.classList.add("custom-control-button"); // Apply the CSS class
         child.style.backgroundColor =
           index === 0 ? style.closeColor : index === 1 ? style.minimizeColor : style.maximizeColor;
         child.addEventListener("mouseleave", () => child.style.backgroundColor =
