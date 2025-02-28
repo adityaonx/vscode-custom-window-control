@@ -7,15 +7,15 @@
     minimizeColor: "#ffbd2e", // yellow
     maximizeColor: "#27c93f", // green
     // button size
-    size: "12px",
+    size: "13px",
     // border radius
     radius: "50%",
     // button hover background color
     hoverBackgroundColor: "#33373e",
     // button text color
     color: "#c0c0c0",
-    fontSize: 0,
-    fontWeight: "0",
+    fontSize: 10,
+    fontWeight: "700",
     gap: "8px"
   });
 
