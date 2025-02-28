@@ -7,16 +7,16 @@
     minimizeColor: "#ffbd2e", // yellow
     maximizeColor: "#27c93f", // green
     // button size
-    size: "5px",
+    size: "10px",
     // border radius
     radius: "50%",
     // button hover background color
     hoverBackgroundColor: "#33373e",
     // button text color
-    color: "#c0c0c0",
+    color: "#ffffff",
     fontSize: 0,
-    fontWeight: "700",
-    gap: "6px"
+    fontWeight: "0",
+    gap: "8px"
   });
 
   window.addEventListener("DOMContentLoaded", () => {
