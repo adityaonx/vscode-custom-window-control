@@ -4,7 +4,7 @@
     closeColor: "#ff5f56",
     minimizeColor: "#ffbd2e",
     maximizeColor: "#27c93f",
-    size: "13px", // Desired size
+    size: "8px", // Desired size
     gap: "6px" // Adjust gap for better fit
   });
 
