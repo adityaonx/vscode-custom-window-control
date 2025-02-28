@@ -1,14 +1,14 @@
 .custom-control-button {
   width: 13px !important;
   height: 13px !important;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  font-weight: 700;
+  border-radius: 50% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  cursor: pointer !important;
+  font-weight: 700 !important;
   font-size: 8px !important; /* Adjust font size for better fit */
-  box-sizing: border-box;
+  box-sizing: border-box !important;
   margin: 2px !important; /* Adjust margin for spacing */
   padding: 0 !important; /* Ensure no additional padding */
 }
