@@ -5,7 +5,7 @@
     minimizeColor: "#ffbd2e",
     maximizeColor: "#27c93f",
     size: "13px", // Desired size
-    gap: "10px"
+    gap: "6px" // Adjust gap for better fit
   });
 
   window.addEventListener("DOMContentLoaded", () => {
