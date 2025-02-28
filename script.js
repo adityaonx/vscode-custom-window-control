@@ -38,10 +38,12 @@
         child.style.cursor = "pointer";
         child.style.fontWeight = style.fontWeight;
         child.style.fontSize = `${style.fontSize}px`;
+        child.style.lineHeight = style.size; // Adjust line-height for better size consistency
+        child.style.display = "flex";
+        child.style.alignItems = "center";
+        child.style.justifyContent = "center";
         child.style.backgroundColor =
           index === 0 ? style.closeColor : index === 1 ? style.minimizeColor : style.maximizeColor;
-        child.style.boxSizing = "border-box"; // Ensure padding is included in the width and height calculation
-        child.style.padding = "2px"; // Slight padding for better appearance
         child.addEventListener("mouseleave", () => child.style.backgroundColor =
           index === 0 ? style.closeColor : index === 1 ? style.minimizeColor : style.maximizeColor);
         child.addEventListener("mouseenter", () => child.style.backgroundColor = style.hoverBackgroundColor);
