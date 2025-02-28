@@ -1,34 +1,27 @@
 /* eslint-env browser */
 (function () {
-  // change style
   const style = Object.freeze({
-    // button background colors
-    closeColor: "#ff5f56", // red
-    minimizeColor: "#ffbd2e", // yellow
-    maximizeColor: "#27c93f", // green
-    // button size
-    size: "13px", // Desired size
-    // border radius
+    closeColor: "#ff5f56",
+    minimizeColor: "#ffbd2e",
+    maximizeColor: "#27c93f",
+    size: "15px",
     radius: "50%",
-    // button hover background color
     hoverBackgroundColor: "#33373e",
-    // button text color
     color: "#c0c0c0",
     fontSize: 10,
     fontWeight: "700",
-    gap: "10px" // Moderate increase
+    gap: "10px"
   });
 
   window.addEventListener("DOMContentLoaded", () => {
     let timer = setInterval(() => {
       const controls = document.querySelector(".titlebar-container .titlebar-right .window-controls-container");
       const leftTitlebar = document.querySelector(".titlebar-container .titlebar-left");
-      // not loaded
+
       if (!controls || !leftTitlebar) {
         return;
       }
 
-      // put close button in first position
       controls.parentNode.removeChild(controls);
       const closeControl = controls.lastChild;
       controls.removeChild(closeControl);
@@ -54,11 +47,11 @@
       leftTitlebar.appendChild(controls);
       clearInterval(timer);
     }, 100);
-    
-    // Hide favicon
+
+    // Hide favicon using CSS
     const link = document.querySelector('link[rel="icon"]');
     if (link) {
-      link.style.display = 'none';
+      link.href = ''; // Removes the favicon by setting an empty URL
     }
   });
 })();
