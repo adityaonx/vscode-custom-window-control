@@ -7,7 +7,7 @@
     minimizeColor: "#ffbd2e", // yellow
     maximizeColor: "#27c93f", // green
     // button size
-    size: "14px", // Larger size
+    size: "13px", // Desired size
     // border radius
     radius: "50%",
     // button hover background color
@@ -39,6 +39,8 @@
       controls.childNodes.forEach((child, index) => {
         child.style.borderRadius = style.radius;
         child.style.width = child.style.height = style.size;
+        child.style.minWidth = style.size;
+        child.style.minHeight = style.size;
         child.style.margin = "auto";
         child.style.cursor = "pointer";
         child.style.fontWeight = style.fontWeight;
