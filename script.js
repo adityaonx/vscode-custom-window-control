@@ -4,7 +4,8 @@
     closeColor: "#ff5f56",
     minimizeColor: "#ffbd2e",
     maximizeColor: "#27c93f",
-    size: "11px",
+    size: "13px", // Desired size
+    padding: "4px", // Adjust padding for consistency
     radius: "50%",
     hoverBackgroundColor: "#33373e",
     color: "#c0c0c0",
@@ -31,6 +32,7 @@
       controls.style.gap = controls.style.marginLeft = style.gap;
       controls.childNodes.forEach((child, index) => {
         child.style.borderRadius = style.radius;
+        child.style.padding = style.padding; // Add padding for better size handling
         child.style.width = child.style.height = style.size;
         child.style.minWidth = style.size;
         child.style.minHeight = style.size;
